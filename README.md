@@ -19,6 +19,7 @@ El uso de este paradigma no solo afecta al CSS. Es la arquitectura que debe marc
 * [OOCSS](https://github.com/stubbornella/oocss/wiki)
 * [BEM](http://bem.info/)
 * [SMACSS](http://smacss.com/)
+* [Architecting Scalable CSS](http://vimeo.com/70041549) (Vídeo)
 * [Session: Scalable and Modular CSS FTW!](http://oredev.org/2012/sessions/scalable-and-modular-css-ftw)
 * [SUITCSS](https://github.com/suitcss/suit)
 * [OOCSS Code Standards](https://github.com/stubbornella/oocss-code-standards)
