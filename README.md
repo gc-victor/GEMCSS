@@ -3,13 +3,16 @@ GEMCSS
 
 El paradigma GEM (globals, elements and modules) está basado en conceptos como OOCSS y SMACSS.
 
-Usamos tres tipos de clases en nuestros CSS, utilizando los prefijos para especificar el tipo al que nos referimos. Por lo tanto usaremos ‘.g-’ para las globales, ‘.e-’ para los elementos y ‘.m-’ para módulos.
+GEM son las siglas, y prefijos, de los tres tipos de clases utilizadas para crear nuestros CSS. Por lo tanto, usaremos ‘.g-’ para las globales, ‘.e-’ para los elementos y ‘.m-’ para módulos.
 
-Estos tienen un orden de mayor a menor en complejidad y de menor a mayor en repetición. Siendo los globales los más abstractos, los elementos la unidad mínima e independientes y los módulos una estructura más compleja que los anteriores.
+Estos tienen un orden de mayor a menor en complejidad y de menor a mayor en repetición. Siendo los globales los más abstractos, los elementos la unidad mínima y los módulos una estructura más compleja que los anteriores.
 
-Los prefijos para las clases hijas de modelos y elementos deben comenzar por el nombre de este, es decir, las clases hijas de ‘.m-tabs’ serán ‘.m-tabs-element’ o ‘.m-tabs-inner’. Ya que recomendamos no usar más de tres clases hijas, proponemos usar la nomenclatura ‘.m-/.e-’ + ‘outer/element/inner’. Siendo ‘-element’ el elemento principal, ’-outer’ una clase que lo recubra e ‘-inner’ una clase hija del elemento principal.
+Las clases globales también llamadas en otras arquitecturas 'base' o 'utils', son aquellas que usamos en innumerables ocasiones, normalmente con una única propiedad. Sirven para extender, pudiéndolo hacer entre ellas, elementos y módulos. Ejemplo de clases globales: .g-floatL,  .g-inlineBlock, .g-colorA, .g-column1 o .g-gutter.
 
-El uso de este paradigma no solo afecta al CSS. Es la aquitectura que debe marcar el camino en el desarrollo del templating, utilizando una estructura modular, independientemente del leguaje que se utilice. Reutilizando los módulos y elementos tantas veces como sea necesario, teniendo siempre presente el principio [DRY](http://es.wikipedia.org/wiki/No_te_repitas) (Don't Repeat Yourself).
+Los prefijos para las clases hijas de modelos y elementos deben comenzar por el nombre de este. Por lo que, las clases hijas de ‘.m-tabs’ serán ‘.m-tabs-element’ o ‘.m-tabs-inner’. Ya que recomendamos no usar más de tres clases hijas, siendo ideal una especificidad de 10, es decir un único selector de clase para cada una de ellas, proponemos usar la nomenclatura ‘.m-/.e-’ + ‘outer/element/inner’. Siendo ‘-element’ el elemento principal, ’-outer’ una clase que lo recubra e ‘-inner’ una clase hija del elemento principal.
+
+El uso de este paradigma no solo afecta al CSS. Es la arquitectura que debe marcar el camino en el desarrollo del templating. Utilizando una estructura modular, independientemente del lenguaje que se utilice. Reutilizando los módulos y elementos tantas veces como sea necesario, teniendo siempre presentes principios como [DRY](http://es.wikipedia.org/wiki/No_te_repitas) (Don't Repeat Yourself) o [KISS](http://es.wikipedia.org/wiki/Principio_KISS) (Keep It Simple, Stupid!).
+
 
 **Referencias**
 
