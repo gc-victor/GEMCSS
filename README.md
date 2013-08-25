@@ -7,7 +7,9 @@ GEM son las siglas, y prefijos, de los tres tipos de clases utilizadas para crea
 
 Estos tienen un orden de mayor a menor en complejidad y de menor a mayor en repetición. Siendo los globales los más abstractos, los elementos la unidad mínima y los módulos una estructura más compleja que los anteriores.
 
-Las clases globales también llamadas en otras arquitecturas 'base' o 'utils', son aquellas que usamos en innumerables ocasiones, normalmente con una única propiedad. Sirven para extender, pudiéndolo hacer entre ellas, elementos y módulos. Ejemplo de clases globales: .g-floatL,  .g-inlineBlock, .g-colorA, .g-column1 o .g-gutter.
+Las clases globales también llamadas en otras arquitecturas 'base' o 'utils', son aquellas que usamos en innumerables ocasiones, normalmente con una única propiedad. Sirven para extender, pudiéndolo hacer entre ellas, elementos y módulos.
+
+Ejemplo de clases globales: .g-floatL,  .g-inlineBlock, .g-colorA, .g-column1 o .g-gutter.
 
 Los prefijos para las clases hijas de modelos y elementos deben comenzar por el nombre de este. Por lo que, las clases hijas de ‘.m-tabs’ serán ‘.m-tabs-element’ o ‘.m-tabs-inner’. Ya que recomendamos no usar más de tres clases hijas, siendo ideal una especificidad de 10, es decir un único selector de clase para cada una de ellas, proponemos usar la nomenclatura ‘.m-/.e-’ + ‘outer/element/inner’. Siendo ‘-element’ el elemento principal, ’-outer’ una clase que lo recubra e ‘-inner’ una clase hija del elemento principal.
 
